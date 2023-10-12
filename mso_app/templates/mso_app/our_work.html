@@ -1,0 +1,56 @@
+<html>
+<header>
+    {% extends "mso_app/base.html" %}
+    {% load static %}
+</header>
+{% block content %} 
+<body>
+    <br><br><br>
+    <!-- Page Content-->
+    <section class="py-5">
+        <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bolder">Our Work</h1>
+                        <p class="lead fw-normal text-muted mb-0">We offer hunting and fishing mentorships for those with a passion and sense of stewardship for nature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{% static '/mso_app/images/homepage_cover.jpg' %}" alt="..." /></div>
+                <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="{% static '/mso_app/images/our_work_body01.jpg' %}" alt="..." /></div>
+                <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="{% static '/mso_app/images/our_work_body02.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <p class="lead fw-normal text-muted">Matt Schmidt Outdoors accepts applications from young people each year who are interested in pursuing a menteeship in either hunting or fishing. We pair the selected individuals with mentors who are knowledgeable about hunting or fishing and outfit them with all that they will need to be successful in the field. This is a huge undertaking and serves as the heart of our work when we are not organizing our annual ice fishing weekend. We are proud of what our young people have accomplished so far in the field. We feel that there is no better way to honor Matt's memory than by using money raised in his name to provide experiences to young individuals who might not otherwise be able to access them. </p>
+                        <a class="text-decoration-none" href="https://forms.gle/32iHNhnxqXCX7G3T9" target="_blank">
+                            Get involved: Contact Us
+                            <i class="bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer-->
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto"><div class="small m-0 text-white">Matt Schmidt Outdoors</div></div>
+            <div class="col-auto">
+                <a class="link-light small" href="https://forms.gle/32iHNhnxqXCX7G3T9" target="_blank">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="{% static '/mso_app/scripts.js' %}"></script>
+</body>
+{% endblock content %}
+</html>

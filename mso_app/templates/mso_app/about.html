@@ -1,0 +1,67 @@
+<html>
+<header>
+    {% extends "mso_app/base.html" %}
+    {% load static %}
+</header>
+{% block content %} 
+<body>
+    <br><br><br>
+     <!-- Page Content-->
+     <section class="py-5">
+        <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bolder">About</h1>
+                        <p class="lead fw-normal text-muted mb-0">Matt was a loving father of 3, husband, brother, son and friend. On May 14, 2020, Matt tragically passed away from an accident at home while doing what he loved, crafting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{% static '/mso_app/images/about_cover.jpg' %}" alt="..." /></div>
+            </div>
+        </div>
+
+        <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bolder">Our Mission Statement</h1>
+                        <p class="lead fw-normal text-muted mb-0">Proceeds from the Annual Matt Schmidt Memorial Ice Fishing Tournament and Social Function will be allocated by determination of the executive committee based on the following criteria: <br>
+                            <ol>
+                                <li>All funds must go to provide experiences to youth in the outdoors. </li>
+                                <li>All funds (save seed money for the following year's event) must be disbursed in the year succeeding the event. </li>
+                                <li>To the greatest extent possible, at least 50% of funds should be allocated in Milton, WI, 25% to greater Rock County and the remaining 25% can be allocated statewide if no local cause can be identified. </li>
+                                <li>"Youth" is defined as anyone younger than 18 years old. </li>
+                                <li>Scholarship recipients may be older than 18 at the time of disbursement as long as they have applied for the scholarship while still in high school. </li>
+                                <li>Preference will be given to educational institutions and nonprofit organizations when there is competition for funds. </li>
+                                <li>Preference will be given to events that center around hunting and fishing when there is competition for funds. </li>
+                              </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<!-- Footer-->
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto"><div class="small m-0 text-white">Matt Schmidt Outdoors</div></div>
+            <div class="col-auto">
+                <a class="link-light small" href="https://forms.gle/32iHNhnxqXCX7G3T9" target="_blank">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="{% static '/mso_app/scripts.js' %}"></script>
+</body>
+{% endblock content %}
+</html>
